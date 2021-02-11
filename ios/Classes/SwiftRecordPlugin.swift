@@ -43,10 +43,6 @@ public class SwiftRecordPlugin: NSObject, FlutterPlugin, AVAudioRecorderDelegate
     stopRecording()
   }
     
-  public func applicationDidEnterBackground(_ application: UIApplication) {
-    stopRecording()
-  }
-
   fileprivate func hasPermission(_ result: @escaping FlutterResult) {
     switch AVAudioSession.sharedInstance().recordPermission {
       case AVAudioSession.RecordPermission.granted:

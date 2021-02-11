@@ -51,10 +51,6 @@ class Recorder {
     result.success(isRecording);
   }
 
-  void close() {
-    stopRecording();
-  }
-
   private void stopRecording() {
     if (recorder != null) {
       try {
