@@ -26,7 +26,6 @@ public class MethodCallHandlerImpl implements MethodCallHandler, PluginRegistry.
   }
 
   void close() {
-    recorder.close();
     pendingPermResult = null;
   }
 
